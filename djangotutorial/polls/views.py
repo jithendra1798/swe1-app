@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.db.models import F
 from django.http import HttpResponseRedirect
 from polls.models import Question, Choice
+
 # from django.template import loader
 from django.views import generic
 
