@@ -1,2 +1,2 @@
 [![Build Status](https://app.travis-ci.com/jithendra1798/swe1-app.svg?branch=main)](https://app.travis-ci.com/jithendra1798/swe1-app)
-[![Coverage Status](https://coveralls.io/repos/github/jithendra1798/swe1-app/badge.png?branch=main)](https://coveralls.io/github/jithendra1798/swe1-app?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/jithendra1798/swe1-app/badge.svg?branch=test-branch)](https://coveralls.io/github/jithendra1798/swe1-app?branch=test-branch)
