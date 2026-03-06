@@ -1,0 +1,28 @@
+language: python
+
+python:
+  - 3.12
+
+install:
+  - pip install -r djangotutorial/requirements.txt
+
+before_script:
+  - cd djangotutorial
+
+script:
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
+  - black --check .
+  - flake8 .
+  - coverage run --source=mysite,polls manage.py test
+
+after_success:
+  - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-1
+  app_name: swe1-app
+  env_name: swe1-app-env
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
