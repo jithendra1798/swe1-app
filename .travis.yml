@@ -24,6 +24,7 @@ deploy:
   region: us-east-1
   app: swe1-app
   env: swe1-app-env
+  bucket_name: elasticbeanstalk-us-east-1-556154630982
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   on:
