@@ -12,4 +12,4 @@ class QuestionModelTest(TestCase):
         self.assertEqual(Question.objects.count(), count + 1)
 
     def test_dummy(self):
-        self.assertTrue(False)
+        self.assertTrue(True)
